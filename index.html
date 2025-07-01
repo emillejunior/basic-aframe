@@ -28,7 +28,12 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="0.5 0.5 -3" rotation="0 10 0" color="#4CC3D9"></a-box>
+      <a-box
+        position="0.5 0.5 -3"
+        rotation="0 10 0"
+        color="#4CC3D9"
+        animation="property: rotation; from: 20 0 0; to: 20 360 0; dir: alternate; loop: true; dur: 4000; easing: easeInOutQuad;"
+      ></a-box>
       <a-entity
         geometry="
     primitive: torus;
