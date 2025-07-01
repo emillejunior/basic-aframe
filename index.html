@@ -28,7 +28,17 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="0.5 0.5 -3" rotation="0 10 0" color="#4CC3D9"></a-box>
+      <a-entity
+        geometry="
+    primitive: torus;
+    radius: 1;
+    radiusTubular: 0.1;
+    segmentsTubular: 12;"
+        rotation="10 0 0"
+        position="-3 1 0"
+      >
+      </a-entity>
+
       <a-sky color="#DDDDDD"></a-sky>
     </a-scene>
   </body>
