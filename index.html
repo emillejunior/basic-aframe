@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A-Frame Basic</title>
+    <meta name="description" content="A-Frame example using WebXR." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <!-- A-Frame Library -->
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <!-- Tailwind CSS for styling the UI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Ensure the canvas and overlay are properly sized */
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      .a-canvas {
+        width: 100% !important;
+        height: 100% !important;
+      }
+      #overlay {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="0.5 0.5 -3" rotation="0 10 0" color="#4CC3D9"></a-box>
+      <a-sky color="#DDDDDD"></a-sky>
+    </a-scene>
+  </body>
+</html>
